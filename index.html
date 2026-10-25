@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e19">
+  <meta name="description" content="UTILITY NEXUS — 직접 만든 유틸리티를 한 곳에서 만나는 미래형 웹 도구 허브. 이미지·동영상 중복 분석 도구 Imgcomp부터 시작합니다.">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="UTILITY NEXUS | Digital Tools Hub">
+  <meta property="og:description" content="필요한 도구로 연결되는 새로운 좌표. 빠르고 가벼운 브라우저 유틸리티 허브.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://util.moip.ai.kr/assets/og-cover.webp">
+  <meta property="og:url" content="https://util.moip.ai.kr/">
+  <link rel="canonical" href="https://util.moip.ai.kr/">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preload" href="./assets/hero-core.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="./styles.css">
+  <title>UTILITY NEXUS — Digital Tools Hub</title>
+  <script src="./tools.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="topline" aria-hidden="true"></div>
+  <a class="skip-link" href="#tools">도구 목록으로 건너뛰기</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="./" class="brand" aria-label="UTILITY NEXUS 홈">
+        <span class="brand-symbol" aria-hidden="true"><span>U</span><i></i></span>
+        <span class="brand-copy"><strong>UTILITY<span class="brand-dot">.</span></strong><small>NEXUS / TOOL NETWORK</small></span>
+      </a>
+      <button class="mobile-toggle" id="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="주요 메뉴">
+        <a class="nav-link active" href="#top">홈</a>
+        <a class="nav-link" href="#tools">유틸리티</a>
+        <a class="nav-link" href="#vision">프로젝트 소개</a>
+        <a class="github-button" href="https://github.com/teamprotofelix/Utility" target="_blank" rel="noopener noreferrer" aria-label="Utility GitHub 저장소, 새 탭에서 열기">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.75-.24.75-.53v-2.08c-3.06.67-3.7-1.3-3.7-1.3-.5-1.28-1.24-1.63-1.24-1.63-1.01-.69.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 .17.79-.8 2.18-.98.1-.72.39-1.21.71-1.5-2.44-.28-5-1.22-5-5.45 0-1.2.43-2.18 1.14-2.96-.12-.28-.5-1.4.1-2.9 0 0 .93-.3 3.06 1.13a10.6 10.6 0 0 1 5.57 0c2.13-1.44 3.05-1.13 3.05-1.13.61 1.5.23 2.62.12 2.9.71.78 1.13 1.77 1.13 2.96 0 4.24-2.57 5.17-5.02 5.44.4.35.76 1.03.76 2.07V22c0 .29.2.63.76.53A11.1 11.1 0 0 0 12 .9Z"/></svg>
+          <span>GitHub</span><span class="arrow-upright">↗</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> SYSTEM ONLINE <span class="eyebrow-divider">//</span> UTIL.MOIP.AI.KR</div>
+        <h1 id="hero-title">일상을 바꾸는<br><span class="gradient-text">도구의 새로운 좌표.</span></h1>
+        <p class="hero-desc">복잡한 과정은 덜고, 필요한 기능에 빠르게 도착하세요.<br class="desktop-break"> 직접 만든 유틸리티를 하나의 디지털 허브에 모았습니다.</p>
+        <div class="hero-actions">
+          <a href="#tools" class="button primary-button">도구 탐색 시작 <span aria-hidden="true">↗</span></a>
+          <a href="#vision" class="button ghost-button">넥서스 소개 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-status" aria-label="허브 정보">
+          <div><strong id="hero-live-count">01</strong><span>LIVE MODULES</span></div>
+          <div><strong>100<span class="percent">%</span></strong><span>WEB ACCESS</span></div>
+          <div><strong class="infinity">∞</strong><span>EXPANSION</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-aura"></div>
+        <div class="visual-frame frame-one"></div><div class="visual-frame frame-two"></div>
+        <img src="./assets/hero-core.webp" alt="" width="780" height="730" fetchpriority="high">
+        <span class="floating-tag tag-upper"><span class="tag-led"></span> CORE // ACTIVE</span>
+        <span class="floating-tag tag-lower">ACCESS NODE <b>001</b></span>
+        <span class="coord coord-top">N 36° 21' 42.8"</span><span class="coord coord-bottom">DIGITAL SPACE / 2026</span>
+      </div>
+      <div class="hero-bottomline" aria-hidden="true"><span>SCROLL TO EXPLORE</span><span class="line"></span><span>001 — 003</span></div>
+    </section>
+
+    <section class="tools-section" id="tools" aria-labelledby="tools-heading">
+      <div class="container">
+        <div class="section-topline"><span>01 / SERVICE DIRECTORY</span><span>INDEX: <b id="module-index">01 ACTIVE</b></span></div>
+        <div class="section-heading-row">
+          <div><div class="section-kicker"><span class="square-indicator"></span> AVAILABLE UTILITIES</div><h2 id="tools-heading">필요한 순간, <span>바로 연결.</span></h2><p>유틸리티는 계속 추가됩니다. 원하는 도구를 찾아 실행하세요.</p></div>
+          <div class="section-ornament" aria-hidden="true">✳ <span>CONNECT<br>AND CREATE</span></div>
+        </div>
+        <div class="discovery-bar" role="search">
+          <label class="search-wrap" for="search-tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="search-tools" type="search" placeholder="유틸리티 이름이나 기능 검색" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+          <div class="filter-group" id="filters" role="group" aria-label="카테고리 필터"><button type="button" class="filter active" data-category="all" aria-pressed="true">전체</button><button type="button" class="filter" data-category="media" aria-pressed="false">이미지 · 미디어</button><button type="button" class="filter" data-category="file" aria-pressed="false">파일 관리</button></div>
+        </div>
+        <div id="results-status" class="result-count" role="status" aria-live="polite">현재 이용 가능한 도구 <strong>1개</strong></div>
+        <div class="tool-grid" id="tool-grid"><noscript><div class="no-results">도구 목록을 보려면 JavaScript를 활성화해 주세요. <a href="https://imgcomp.moip.ai.kr/">Imgcomp 바로가기 ↗</a></div></noscript></div>
+        <div class="no-results" id="no-results" hidden><span>∅</span><strong>일치하는 유틸리티가 없습니다.</strong><p>검색어 또는 카테고리를 변경해 보세요.</p><button type="button" id="reset-search">전체 도구 보기 ↗</button></div>
+        <div class="future-heading"><span>EXPANSION SLOTS</span><div></div><span>THE NETWORK IS GROWING</span></div>
+        <div class="upcoming-grid" aria-label="추후 확장 예정">
+          <article class="upcoming-card"><div class="upcoming-art"><img src="./assets/future-network.webp" width="520" height="300" loading="lazy" alt="미래형 데이터 네트워크 일러스트"></div><div class="upcoming-meta"><span>NODE / 002</span><span class="pending-pill">추가 예정</span></div><h3>새로운 도구를 위한 공간</h3><p>유용한 아이디어가 다음 모듈로 연결됩니다.</p></article>
+          <article class="upcoming-card"><div class="upcoming-art"><img src="./assets/future-grid.webp" width="520" height="300" loading="lazy" alt="디지털 회로와 확장 격자 일러스트"></div><div class="upcoming-meta"><span>NODE / 003</span><span class="pending-pill">추가 예정</span></div><h3>계속 확장되는 작업실</h3><p>다음 도구가 준비되면 이곳에서 만날 수 있습니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision-section container" id="vision" aria-labelledby="vision-heading">
+      <div class="vision-intro"><div class="section-kicker"><span class="square-indicator"></span> BUILT FOR EVERYDAY WORK</div><h2 id="vision-heading">더 간결하게.<br><span class="gradient-text">더 자유롭게.</span></h2><p>UTILITY NEXUS는 직접 개발한 웹 유틸리티를 발견하고 접속할 수 있는 연결 허브입니다. 기능은 각 서비스에서 독립적으로 실행됩니다.</p><a href="https://github.com/teamprotofelix/Utility" target="_blank" rel="noopener noreferrer" class="inline-link">프로젝트 코드 살펴보기 <span aria-hidden="true">↗</span></a></div>
+      <div class="vision-list">
+        <article><span class="vision-number">01 /</span><div><h3>바로 열고, 바로 사용</h3><p>별도의 허브 가입이나 설치 없이 원하는 도구로 이동합니다.</p></div><span aria-hidden="true" class="vision-icon">↗</span></article>
+        <article><span class="vision-number">02 /</span><div><h3>도구는 각각 독립적으로</h3><p>모듈마다 고유한 주소와 기능을 유지하며 서로 간섭하지 않습니다.</p></div><span aria-hidden="true" class="vision-icon">◇</span></article>
+        <article><span class="vision-number">03 /</span><div><h3>하나씩 더해지는 가능성</h3><p>새 서비스는 목록 데이터만 추가하면 허브에 자동으로 나타납니다.</p></div><span aria-hidden="true" class="vision-icon">＋</span></article>
+      </div>
+    </section>
+
+    <section class="closing-section"><div class="container closing-inner"><div class="closing-lights" aria-hidden="true"></div><span class="closing-kicker">NEXT UTILITY / COMING ONLINE</span><h2>좋은 도구는<br>계속해서 연결됩니다<span>.</span></h2><p>필요한 기능을 담은 새로운 모듈이 이곳에 더해집니다.</p><a class="button closing-button" href="#tools">현재 도구 보기 ↗</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span class="footer-mark">U<span>.</span></span><div><strong>UTILITY NEXUS</strong><small>AN INDEPENDENT DIGITAL TOOL HUB</small></div></div><div class="footer-right"><a href="https://github.com/teamprotofelix/Utility" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#top">BACK TO TOP ↑</a><small>© <span id="year">2026</span> UTILITY NEXUS</small></div></div><p class="footer-note container">이 사이트는 개별 도구로 연결하는 허브입니다. 파일 처리·저장 방식과 지원 환경은 각 도구의 안내를 확인해 주세요.</p></footer>
+</body>
+</html>
